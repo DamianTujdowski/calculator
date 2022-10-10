@@ -33,4 +33,12 @@ class CalculationsControllerTest {
         assertEquals(8, res);
     }
 
+    @Test
+    void addShouldReturn1018() {
+        a = 900;
+        b = 118;
+        int res = cc.add(a, b);
+        assertEquals(1018, res);
+    }
+
 }
