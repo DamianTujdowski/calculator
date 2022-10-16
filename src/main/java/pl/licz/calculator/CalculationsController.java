@@ -11,12 +11,19 @@ public class CalculationsController {
     public Integer add(@RequestParam int a, @RequestParam int b) {
         return a + b;
     }
+
     @GetMapping("/subtract/")
     public Integer subtract(@RequestParam int a, @RequestParam int b) {
         return a - b;
     }
+
     @GetMapping("/multiply/")
     public Integer multiply(@RequestParam int a, @RequestParam int b) {
         return a * b;
+    }
+
+    @GetMapping("/divide/")
+    public Integer divide(@RequestParam int a, @RequestParam int b) {
+        return a / b + 5;
     }
 }

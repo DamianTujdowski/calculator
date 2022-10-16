@@ -1,7 +1,5 @@
-name: CI
-
+name: Build and deploy
 on:
-
   push:
     branches: [ "master" ]
 

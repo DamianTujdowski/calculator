@@ -41,4 +41,12 @@ class CalculationsControllerTest {
         assertEquals(1018, res);
     }
 
+    @Test
+    void divisionShouldReturn3() {
+        a = 3;
+        b = 9;
+        int res = cc.divide(a, b);
+        assertEquals(3, res);
+    }
+
 }
