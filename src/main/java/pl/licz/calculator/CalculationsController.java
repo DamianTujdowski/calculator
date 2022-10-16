@@ -24,6 +24,6 @@ public class CalculationsController {
 
     @GetMapping("/divide/")
     public Integer divide(@RequestParam int a, @RequestParam int b) {
-        return a / b + 5;
+        return a / b;
     }
 }
